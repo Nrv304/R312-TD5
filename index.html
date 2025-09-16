@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/style.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-900 text-white">
+  <body class="clr-gray-900 clr-white relative">
     <header class="justify-center items-center p-8 space-y-4 flex flex-col">
-    <h1 class="text-white text-2xl font-semibold ">adamkeyes</h1>
+    <h1 class="clr-white text-4xl font-semibold font-primary">adamkeyes</h1>
     <div class="flex space-x-4">
       <a href="#">
-        <img src="./assets/Icons/icon-github.svg" alt="github">
+        <img src="./assets/Icons/icon-github.svg" alt="github" class="w-6 h-6 inline">
       </a>
       <a href="#">
-        <img src="./assets/Icons/icon-frontend-mentor.svg" alt="frontend">
+        <img src="./assets/Icons/icon-frontend-mentor.svg" alt="frontend" class="w-6 h-6 inline">
       </a>
-      <a href="#"></a>
-      <img src="./assets/Icons/icon-linkedin.svg" alt="linkedin">
-      <img src="./assets/Icons/icon-twitter.svg" alt="twitter">
+      <a href="#">
+        <img src="./assets/Icons/icon-linkedin.svg" alt="linkedin" class="w-6 h-6 inline">
+      </a>
+      <a href="#">
+        <img src="./assets/Icons/icon-twitter.svg" alt="twitter" class="w-6 h-6 inline">
+      </a>
     </div>
-    <img src="" alt="">
-    </header>
-  </body>
+    <div class="relative max-w-l">
+    <img src="./assets/Profile/image-profile-mobile.webp" alt="" class="mx-auto m-6 w-55 h-95 object-cover absolute z-1">
+    <h2  class="font-primary text-4xl font-bold text-center">Nice to meet you! <br>I'm <span class="border-b-5 border-green-400">Adam Keyes</span>.</h2>
+    <p class="text-center text-lg leading-7 max-w-md m-3 px-15">Based in the UK, I'm a front-end developer passionate about building accessible web apps that users love.</p>
+    </div>
+  </header>
+</body>
 </html>

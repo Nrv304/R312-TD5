@@ -1,19 +1,44 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import "tailwindcss";
 
-:root {
-  --clr-white: oklch(1 0 0);
+@layer base {
+  :root {
+    --clr-white: oklch(1 0 0);
 
-  --clr-gray-300: oklch(87.2% 0.01 258.338);
-  --clr-gray-400: oklch(70.7% 0.022 261.325);
-  --clr-gray-800: oklch(27.8% 0.033 256.848);
-  --clr-gray-900: oklch(21% 0.034 264.665);
+    --clr-gray-300: oklch(87.2% 0.01 258.338);
+    --clr-gray-400: oklch(70.7% 0.022 261.325);
+    --clr-gray-800: oklch(27.8% 0.033 256.848);
+    --clr-gray-900: oklch(21% 0.034 264.665);
 
-  --clr-green: oklch(87.1% 0.15 154.449);
-  --clr-green-300: oklch(79.2% 0.209 151.711);
+    --clr-green: oklch(87.1% 0.15 154.449);
+    --clr-green-300: oklch(79.2% 0.209 151.711);
 
-    .font-primary {
-      font-family: var(--font-primary);
-    }
+    --font-primary: "Space Grotesk", sans-serif;
   }
+}
+
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+.clr-white {
+  color: var(--clr-white);
+}
+.clr-gray-300 {
+  color: var(--clr-gray-300);
+}
+.clr-gray-400 {
+  color: var(--clr-gray-400);
+}
+.clr-gray-800 {
+  color: var(--clr-gray-800);
+}
+.clr-gray-900 {
+  background-color: var(--clr-gray-900);
+}
+.clr-green {
+  color: var(--clr-green);
+}
+.clr-green-300 {
+  color: var(--clr-green-300);
 }
