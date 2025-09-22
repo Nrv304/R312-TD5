@@ -13,32 +13,18 @@
     --clr-green: oklch(87.1% 0.15 154.449);
     --clr-green-300: oklch(79.2% 0.209 151.711);
 
-    --font-primary: "Space Grotesk", sans-serif;
+    --font-grotesk: "Space Grotesk", sans-serif;
   }
 }
 
-.font-primary {
-  font-family: var(--font-primary);
-}
+@theme inline {
 
-.clr-white {
-  color: var(--clr-white);
-}
-.clr-gray-300 {
-  color: var(--clr-gray-300);
-}
-.clr-gray-400 {
-  color: var(--clr-gray-400);
-}
-.clr-gray-800 {
-  color: var(--clr-gray-800);
-}
-.clr-gray-900 {
-  background-color: var(--clr-gray-900);
-}
-.clr-green {
-  color: var(--clr-green);
-}
-.clr-green-300 {
-  color: var(--clr-green-300);
+  --font-primary: var(--font-grotesk);
+  
+  --color-primary: var(--clr-white);
+  --color-secondary: var(--clr-gray-300);
+  --color-background: var(--clr-gray-900);
+  --color-third: var(--clr-green-300);
+  --color-dark: var(--clr-gray-400);
+  --color-clear: var(--clr-gray-300);
 }
