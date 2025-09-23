@@ -5,36 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/style.css" rel="stylesheet" />
   </head>
-  <body class="bg-background text-primary p-8">
-    <header class="justify-center items-center text-center p-8 space-y-4 flex flex-col">
-      <div class="m-3">
-          <h3 class="text-center text-primary text-2xl font-semibold font-primary mb-3 ">adamkeyes</h3>
-        <div class="flex space-x-4 justify-center gap-4 ">
-          <a href="#">
-            <img src="./assets/Icons/icon-github.svg" alt="github" class="w-6 h-6 inline">
-          </a>
-          <a href="#">
-            <img src="./assets/Icons/icon-frontend-mentor.svg" alt="frontend" class="w-6 h-6 inline">
-          </a>
-          <a href="#">
-            <img src="./assets/Icons/icon-linkedin.svg" alt="linkedin" class="w-6 h-6 inline">
-          </a>
-          <a href="#">
-            <img src="./assets/Icons/icon-twitter.svg" alt="twitter" class="w-6 h-6 inline">
-          </a>
-        </div>
-      </div>
+  <body class="text-primary">
+    <div class="bg-background text-primary p-8">
+    <header class="justify-center items-center text-center space-y-4 flex flex-col">
       <section class="relative max-w-l translate-y-">
         <a href="#">
           <img src="./assets/Profile/image-profile-mobile.webp" alt="" class="mx-auto w-75 h-125 object-cover">
         </a>
-      <h2  class="font-primary text-3xl font-bold text-center mb-6">Nice to meet you! <br>I'm <span class="border-b-third border-b-3">Adam Keyes</span>.</h2>
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 mt-4 flex flex-col items-center w-full z-10">
+          <h3 class="text-center text-primary text-2xl font-semibold font-primary mb-3 bg-background/80 px-4 py-1 rounded">adamkeyes</h3>
+          <div class="flex space-x-4 justify-center gap-4 ">
+            <a href="#">
+              <img src="./assets/Icons/icon-github.svg" alt="github" class="w-6 h-6 inline">
+            </a>
+            <a href="#">
+              <img src="./assets/Icons/icon-frontend-mentor.svg" alt="frontend" class="w-6 h-6 inline">
+            </a>
+            <a href="#">
+              <img src="./assets/Icons/icon-linkedin.svg" alt="linkedin" class="w-6 h-6 inline">
+            </a>
+            <a href="#">
+              <img src="./assets/Icons/icon-twitter.svg" alt="twitter" class="w-6 h-6 inline">
+            </a>
+          </div>
+        </div>
+      <h2  class="font-primary text-3xl font-bold text-center mb-6 mt-8">Nice to meet you! <br>I'm <span class="border-b-third border-b-3">Adam Keyes</span>.</h2>
       <p class="text-center text-1xl max-w-md py-2">Based in the UK, I'm a front-end developer passionate about building accessible web apps that users love.</p>
-      <button class="font-primary text-1xl border-b-3 border-third text-third">CONTACT ME</button>
+      <button class="font-primary text-1xl border-b-3 border-third text-third my-3">CONTACT ME</button>
     </section>
   </header>
   <section class="text-center p-8 space-y-4 flex flex-col border-t-2 border-primary">
-    <ul class="">
+    <ul class="font-primary list-none max-w-md mx-auto">
       <li class="mb-6">
         <h4 class="font-bold text-2xl">HTML</h4>
         <p class="text-secondary">4 Years Experience</p>
@@ -61,10 +62,122 @@
       </li>
     </ul>
   </section>
-  <section class="border-t-2 border-primary item-center flex flex-col">
+  <section class="border-t-2 border-primary item-center flex flex-col space-y-6">
     <h3 class="text-center text-primary text-3xl font-bold font-primary mb-3 ">Projects</h3>
-    <button class="font-primary text-1xl border-b-3 border-third text-third w-24">CONTACT ME</button>
+    <div class="flex justify-center items-center">
+      <button class="font-primary text-1xl border-b-3 border-third text-third w-24">CONTACT ME</button>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="py-3 space-y-4">
+        <img src="./assets/Projects/thumbnail-project-1-small.webp" alt="project 1" class="mx-auto w-140 h-70 object-cover">
+        <h3 class="font-primary font-bold text-2xl">DESIGN PORTFOLIO</h3>
+        <div class="flex space-x-4">
+          <p class="font-primary text-clear">HTML</p>
+          <p class="font-primary text-clear">CSS</p>
+        </div>
+        <div class="flex space-x-4">
+          <button class="font-primary text-xs border-b-2 border-third text-third w-24 p-1 text-left">VIEW PROJECT</button>
+          <button class="font-primary text-xs border-b-2 border-third text-third w-24 p-1 text-left">VIEW CODE</button>
+        </div>
+      </div>
+      <div class="py-3 space-y-4">
+        <img src="./assets/Projects/thumbnail-project-2-small.webp" alt="project 1" class="mx-auto w-140 h-70 object-cover">
+        <h3 class="font-primary font-bold text-2xl">E-LEARNING LANDING PAGE</h3>
+        <div class="flex space-x-4">
+          <p class="font-primary text-clear">HTML</p>
+          <p class="font-primary text-clear">CSS</p>
+        </div>
+        <div class="flex space-x-4">
+          <button class="font-primary text-xs border-b-2 border-third text-third w-24 p-1 text-left">VIEW PROJECT</button>
+          <button class="font-primary text-xs border-b-2 border-third text-third w-24 p-1 text-left">VIEW CODE</button>
+        </div>
+      </div>
+      <div class="py-3 space-y-4">
+        <img src="./assets/Projects/thumbnail-project-3-small.webp" alt="project 1" class="mx-auto w-140 h-70 object-cover">
+        <h3 class="font-primary font-bold text-2xl">TODO WEB APP</h3>
+        <div class="flex space-x-4">
+          <p class="font-primary text-clear">HTML</p>
+          <p class="font-primary text-clear">CSS</p>
+          <p class="font-primary text-clear">JAVASCRIPT</p>
+        </div>
+        <div class="flex space-x-4">
+          <button class="font-primary text-xs border-b-2 border-third text-third w-24 p-1 text-left">VIEW PROJECT</button>
+          <button class="font-primary text-xs border-b-2 border-third text-third w-24 p-1 text-left">VIEW CODE</button>
+        </div>
+      </div>
+      <div class="py-3 space-y-4">
+        <img src="./assets/Projects/thumbnail-project-4-small.webp" alt="project 1" class="mx-auto w-140 h-70 object-cover">
+        <h3 class="font-primary font-bold text-2xl">ENTERTAINMENT WEB APP</h3>
+        <div class="flex space-x-4">
+          <p class="font-primary text-clear">HTML</p>
+          <p class="font-primary text-clear">CSS</p>
+          <p class="font-primary text-clear">JAVASCRIPT</p>
+        </div>
+        <div class="flex space-x-4">
+          <button class="font-primary text-xs border-b-2 border-third text-third w-24 p-1 text-left">VIEW PROJECT</button>
+          <button class="font-primary text-xs border-b-2 border-third text-third w-24 p-1 text-left">VIEW CODE</button>
+        </div>
+      </div>
+      <div class="py-3 space-y-4">
+        <img src="./assets/Projects/thumbnail-project-5-small.webp" alt="project 1" class="mx-auto w-140 h-70 object-cover">
+        <h3 class="font-primary font-bold text-2xl">MEMORY GAME</h3>
+        <div class="flex space-x-4">
+          <p class="font-primary text-clear">HTML</p>
+          <p class="font-primary text-clear">CSS</p>
+          <p class="font-primary text-clear">JAVASCRIPT</p>
+        </div>
+        <div class="flex space-x-4">
+          <button class="font-primary text-xs border-b-2 border-third text-third w-24 p-1 text-left">VIEW PROJECT</button>
+          <button class="font-primary text-xs border-b-2 border-third text-third w-24 p-1 text-left">VIEW CODE</button>
+        </div>
+      </div>
+      <div class="py-3 space-y-4">
+        <img src="./assets/Projects/thumbnail-project-6-small.webp" alt="project 1" class="mx-auto w-140 h-70 object-cover">
+        <h3 class="font-primary font-bold text-2xl">ART GALLERY SHOWCASE</h3>
+        <div class="flex space-x-4">
+          <p class="font-primary text-clear">HTML</p>
+          <p class="font-primary text-clear">CSS</p>
+          <p class="font-primary text-clear">JAVASCRIPT</p>
+        </div>
+        <div class="flex space-x-4">
+          <button class="font-primary text-xs border-b-2 border-third text-third w-24 p-1 text-left">VIEW PROJECT</button>
+          <button class="font-primary text-xs border-b-2 border-third text-third w-24 p-1 text-left">VIEW CODE</button>
+        </div>
+      </div>
+    </div>
   </section>
-   
+  </div>
+   <footer class="bg-dark p-8">
+    <h1 class="font-primary text-3xl font-semibold my-4">Contact</h1>
+    <p class="font-primary">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
+    <form class="flex flex-col gap-4 max-w-md mx-auto mt-6">
+      <input type="text" placeholder="NAME" class="border-b border-clear px-3 py-2" />
+      <input type="email" placeholder="EMAIL" class="border-b border-clear px-3 py-2" />
+      <textarea placeholder="MESSAGE" class="border-b border-clear px-3 py-2" rows="4"></textarea>
+    </form>
+    <div class="flex text-right justify-end max-w-md mx-auto my-4">
+      <div class="relative w-full flex justify-end items-center">
+        <button class="font-primary text-third border-b border-third font-semibold my-4 relative z-10">SEND MESSAGE</button>
+        <img src="./assets/Pattern/pattern-rings.svg" alt="pattern rings" class="absolute left-28 top-1/2 -translate-y-1/2 z-0 pointer-events-none w-80 h-25 opacity-80" />
+      </div>
+    </div>
+      <div class="flex flex-row ">
+          <h3 class="text-center text-primary text-2xl font-semibold font-primary mb-3 ">adamkeyes</h3>
+        <div class="flex justify-right space-x-4 ml-auto">
+          <a href="#">
+            <img src="./assets/Icons/icon-github.svg" alt="github" class="w-6 h-6 inline">
+          </a>
+          <a href="#">
+            <img src="./assets/Icons/icon-frontend-mentor.svg" alt="frontend" class="w-6 h-6 inline">
+          </a>
+          <a href="#">
+            <img src="./assets/Icons/icon-linkedin.svg" alt="linkedin" class="w-6 h-6 inline">
+          </a>
+          <a href="#">
+            <img src="./assets/Icons/icon-twitter.svg" alt="twitter" class="w-6 h-6 inline">
+          </a>
+        </div>
+      </div>
+   </footer>
 </body>
 </html>

@@ -25,6 +25,6 @@
   --color-secondary: var(--clr-gray-300);
   --color-background: var(--clr-gray-900);
   --color-third: var(--clr-green-300);
-  --color-dark: var(--clr-gray-400);
-  --color-clear: var(--clr-gray-300);
+  --color-clear: var(--clr-gray-400);
+  --color-dark: var(--clr-gray-800);
 }
